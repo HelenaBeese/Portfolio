@@ -513,7 +513,7 @@ color: #313131;
 }
 
 .form-submit {
-  height: auto;
+  height: 100px;
   color: #000000;
   width: 90px;
   margin-top: 25px;
