@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <nav> 
+    <div class="topnav-grid" id="myTopnav">
+      <a href="contact.html" class="contact" id="nav">Contact</a>
+      <a href="projects.html"  class="projects" id="nav">Projects</a>
+      <a href="artwork.html"  class="artwork" id="nav">Artwork</a>
+      <a href="index.html" class="about" id="nav">Home</a>
+      <img class="title" src="/About/HelenaBeeseTitle.jpeg" alt="Helena Beese Title">
+      <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()"><img class="menu-icon" src="/About/navigation-icon.svg" alt="Navigation symbol"></a>
+    </div>
+  </nav>      
+        
+        <section class="contact-section">
+          <h1>Contact</h1>
+
+        
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        
+            <input type="hidden" name="access_key" value="02de26c9-80cf-4526-9d1c-52888f0da540" />
+            <input type="hidden" name="subject" value="Website User Submission" />
+            <input type="hidden" name="from_name" value="Helena Beese Portfolio" />
+            <input type="hidden" name="redirect" value="http://127.0.0.1:3000/Helena-Beese/contact_sucess.html">
+        
+            <div class="form-group-container">
+              <div class="form-group">
+                <input id="name" name="name" class="form-input" placeholder="Your Name" type="text" />
+              </div>
+              <div class="form-group">
+                <input id="email" name="email" class="form-input" placeholder="Your Email" type="email" />
+              </div>
+              <div class="form-group">
+                <textarea class="form-textarea" id="message" name="message" placeholder="Your Message"></textarea>
+              </div>
+            </div>
+            <button class="form-submit" type="submit">Send</button>
+          </form>
+        
+        </section>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav-grid") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav-grid";
+          }
+        }
+        </script>
+
+    <div class="footer">
+      <div class="icon-text"><img class="icon" src="/About/mail.svg" alt="Email symbol">helenabeese@gmail.com</div>
+      <div class="icon-text"><img class="icon" src="/About/instagram.svg" alt="Instagram symbol"><a id="link" href="https://www.instagram.com/helena.bee/?hl=en-gb" target="_blank">@helena.bee</a></div>
+    </div> 
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Helena Beese Portfolio</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <nav> 
+    <div class="topnav-grid" id="myTopnav">
+      <a href="contact.html" class="contact" id="nav">Contact</a>
+      <a href="projects.html"  class="projects" id="nav">Projects</a>
+      <a href="artwork.html"  class="artwork" id="nav">Artwork</a>
+      <a href="index.html" class="about" id="nav">Home</a>
+      <img class="title" src="/About/HelenaBeeseTitle.jpeg" alt="Helena Beese Title">
+      <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()"><img class="menu-icon" src="/About/navigation-icon.svg" alt="Navigation symbol"></a>
+    </div>
+  </nav>  
+
+      
+      <div class="content-container">
+        <div class="content yaz">
+          <img class="image" id="img" src="../About/Yazz_2024.jpeg" alt="Painting of Yazz">
+        </div>
+        
+        <div class="content left">
+          <h1>About</h1>
+          <p class="webtext">Originally from Liverpool and now based in London, my creative practice combines painting, printmaking, and design for murals, posters, and publications. Holding an MRes in Fine Art Theory and Philosophy from Central Saint Martins, my research and written work explores alternative art dialogue, focusing on themes of memory, love, and testimony. Alongside accepting commissions, I’ve recently enjoyed collaborating with primary schools and universities, leading workshops and projects designed to encourage creative confidence. </p>
+
+        </div>
+        <div class="content right">
+          <img src="/About/HelenaBeeseTitle.jpeg" alt="Helena Beese Title" style="width: 200px;">
+          <div class="icon-text"><img class="icon" src="/About/mail.svg" alt="Email symbol">helenabeese@gmail.com</div>
+          <div class="icon-text"><img class="icon" src="/About/instagram.svg" alt="Instagram symbol"><a id="link" href="https://www.instagram.com/helena.bee/?hl=en-gb" target="_blank">@helena.bee</a></div>
+        </div>
+      </div>
+
+
+
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav-grid") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav-grid";
+          }
+        }
+        </script>
+
+    </body>
+</html>

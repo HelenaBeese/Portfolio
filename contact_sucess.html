@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Sucess</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <nav> 
+    <div class="topnav-grid" id="myTopnav">
+      <a href="contact.html" class="contact" id="nav">Contact</a>
+      <a href="projects.html"  class="projects" id="nav">Projects</a>
+      <a href="artwork.html"  class="artwork" id="nav">Artwork</a>
+      <a href="index.html" class="about" id="nav">Home</a>
+      <img class="title" src="/About/HelenaBeeseTitle.jpeg" alt="Helena Beese Title">
+      <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()"><img class="menu-icon" src="/About/navigation-icon.svg" alt="Navigation symbol"></a>
+    </div>
+  </nav>     
+        
+
+        <section class="contact-section">
+        <h1>Contact</h1>
+          <div class="form-group-container">
+              <h1 style="text-align: center; padding-left: 40px;">Thanks for your message ! </h1>
+          </div>
+        </section>
+
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav-grid") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav-grid";
+            }
+          }
+          </script>
+  
+      <div class="footer">
+        <div><img class="icon" src="/About/mail.svg" alt="Email symbol">helenabeese@gmail.com</div>
+        <div><img class="icon" src="/About/instagram.svg" alt="Instagram symbol"><a id="link" href="https://www.instagram.com/helena.bee/?hl=en-gb" target="_blank">@helena.bee</a></div>
+      </div> 
+  
+  </body>
+  </html>
